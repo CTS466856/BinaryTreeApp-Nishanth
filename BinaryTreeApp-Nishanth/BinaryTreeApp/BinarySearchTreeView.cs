@@ -65,21 +65,21 @@ namespace BinaryTreeApp
 
 			//Set the current frame
 			var treeHeight = HeightOfTheNode (root) + 1;
-	
+
 			var frameHeightToSet = treeHeight * NodeHeight + (treeHeight - 1) * HeightDistanceBetweenLevels;
-			var frameWidthToSet = Math.Pow (2, treeHeight) * NodeWidth;
-
-			this.Frame = new CoreGraphics.CGRect (0, 0, frameWidthToSet, frameHeightToSet);
 
 
-			//	*****	edited by nishanth	******	//
+			//	********************	edit start 0	*********************	//
 
-			var nishanthtreewidth = Math.Pow (2, treeHeight);
-			var nishanthframewidthtoset = nishanthtreewidth * NodeWidth + (nishanthtreewidth - 1) * WidthDistanceBetweenAdjacentNodes;
+//			var frameWidthToSet = Math.Pow (2, treeHeight) * NodeWidth;
+//			this.Frame = new CoreGraphics.CGRect (0, 0, frameWidthToSet, frameHeightToSet);
 
-			this.Frame = new CoreGraphics.CGRect (0, 0, nishanthframewidthtoset, frameHeightToSet);
+			var Editedtreewidth = Math.Pow (2, treeHeight);
+			var Editedframewidthtoset = Editedtreewidth * NodeWidth + (Editedtreewidth - 1) * WidthDistanceBetweenAdjacentNodes;
 
-			//	*****	edited by nishanth	******	//
+			this.Frame = new CoreGraphics.CGRect (0, 0, Editedframewidthtoset, frameHeightToSet);
+
+			//	********************	edit end 0	*********************	//
 
 
 			var parent = (this.Superview as UIScrollView);
@@ -142,6 +142,8 @@ namespace BinaryTreeApp
 			//start with root node and set the frame for its children
 			var treeHeight = HeightOfTheNode (root);
 
+			//	********************	edit start 1	*********************	//
+
 //			if (treeHeight != -1) {
 //				SetFrame (root, new CGRect (((Math.Pow (2, treeHeight) / 2)) * 2 * NodeWidth, 0, NodeWidth, NodeHeight));
 //
@@ -151,14 +153,12 @@ namespace BinaryTreeApp
 //				}
 //			}
 
-			//	*****	edited by nishanth	******	//
-
 			if (treeHeight != -1) {
 
 				// root is not null
 				// set frame for root
 
-				SetNishanthFrame (root,
+				EditedSetFrame (root,
 					new CGRect (
 						Math.Pow(2,HeightOfTheNode(root)) * ( WidthDistanceBetweenAdjacentNodes + NodeWidth ),
 						0,
@@ -174,31 +174,31 @@ namespace BinaryTreeApp
 
 			}
 
-			//	*****	edited by nishanth	******	//
+			//	********************	edit end 1	*********************	//
 
 			SetNeedsDisplay ();
 		}
 
-		//	*****	edited by nishanth	******	//
+		//	********************	edit start 2	*********************	//
 
-		void SetNishanthFrame (NodeView node, CGRect frame)
+		void EditedSetFrame (NodeView node, CGRect frame)
 		{
 
 			node.Frame = frame;
 
 			if (node.LeftChild != null) {
 
-				SetNishanthFrame (node.LeftChild, new CGRect (frame.X - (WidthDistanceBetweenAdjacentNodes * (Math.Pow(2,HeightOfTheNode(node.LeftChild)))), frame.Y + (NodeHeight + HeightDistanceBetweenLevels), NodeWidth, NodeHeight));
+				EditedSetFrame (node.LeftChild, new CGRect (frame.X - (WidthDistanceBetweenAdjacentNodes * (Math.Pow(2,HeightOfTheNode(node.LeftChild)))), frame.Y + (NodeHeight + HeightDistanceBetweenLevels), NodeWidth, NodeHeight));
 			}
 
 			if (node.RightChild != null) {
 
-				SetNishanthFrame (node.RightChild, new CGRect (frame.X + (WidthDistanceBetweenAdjacentNodes * (Math.Pow(2,HeightOfTheNode(node.RightChild)))), frame.Y + (NodeHeight + HeightDistanceBetweenLevels), NodeWidth, NodeHeight));
+				EditedSetFrame (node.RightChild, new CGRect (frame.X + (WidthDistanceBetweenAdjacentNodes * (Math.Pow(2,HeightOfTheNode(node.RightChild)))), frame.Y + (NodeHeight + HeightDistanceBetweenLevels), NodeWidth, NodeHeight));
 			}
 
 		}
 
-		//	*****	edited by nishanth	******	//
+		//	********************	edit end 2	*********************	//
 
 
 		void SetFrame (NodeView node, CGRect frame)
