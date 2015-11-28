@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeApp", "BinaryTreeApp\BinaryTreeApp.csproj", "{A6A3E838-17C8-4F8C-AED5-83880A0E704C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6A3E838-17C8-4F8C-AED5-83880A0E704C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{A6A3E838-17C8-4F8C-AED5-83880A0E704C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{A6A3E838-17C8-4F8C-AED5-83880A0E704C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{A6A3E838-17C8-4F8C-AED5-83880A0E704C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{A6A3E838-17C8-4F8C-AED5-83880A0E704C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{A6A3E838-17C8-4F8C-AED5-83880A0E704C}.Release|iPhone.Build.0 = Release|iPhone
+		{A6A3E838-17C8-4F8C-AED5-83880A0E704C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{A6A3E838-17C8-4F8C-AED5-83880A0E704C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal

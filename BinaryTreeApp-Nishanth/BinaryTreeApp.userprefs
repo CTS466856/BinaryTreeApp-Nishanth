@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="BinaryTreeApp/BinaryTreeApp.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPadAir.8.4" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BinaryTreeApp/BinarySearchTreeView.cs">
+    <Files>
+      <File FileName="BinaryTreeApp/NodeView.cs" Line="1" Column="1" />
+      <File FileName="BinaryTreeApp/RandomValueGenerator.cs" Line="1" Column="1" />
+      <File FileName="BinaryTreeApp/ViewController.cs" Line="82" Column="18" />
+      <File FileName="BinaryTreeApp/CircleView.cs" Line="43" Column="1" />
+      <File FileName="BinaryTreeApp/BinarySearchTreeView.cs" Line="152" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
